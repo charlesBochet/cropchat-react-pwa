@@ -8,9 +8,28 @@ Cropchat
 
 `git clone git@github.com:charlesBochet/cropchat-react-pwa.git`
 
-## Step 1 : Create App boilerplate
+Application have been created using `react-create-app`.
 
-1. `npm install -g create-react-app`
-2. `create-react-app cropchat` : this will create a new react application in a new `cropchat` folder
-3. [Optional] Move cropchat folder content to root directory
-4. Start application: `yarn start`
+## Step 0 : Create App boilerplate
+
+1. Launch application `yarn start`
+
+## Step 1 : Native like experience
+
+## Step 2 : Serve it over HTTPs
+
+## Step 3 : Make the app installable
+
+## Step 4 : Set up Fresh data with Firebase
+
+## Step 5 : Offline caching
+
+## Step 6 : Post pictures
+
+## Step 7 : Benefit from native features (camera, location, share)
+
+## Step 8 : Going further :
+
+### Optimize performances
+### Background Sync
+### Push Notifications
