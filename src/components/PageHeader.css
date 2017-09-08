@@ -12,11 +12,6 @@
   color: white;
 }
 
-.App-intro {
-  text-align: center;
-  font-size: large;
-}
-
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
