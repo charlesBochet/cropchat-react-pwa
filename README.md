@@ -12,11 +12,22 @@ Application have been created using `react-create-app`.
 
 ## Step 0 : Create App boilerplate
 
+1. Go back to first commit `git co xxxx`
 1. Launch application `yarn start`
 
 ## Step 1 : Native like experience
 
+1. Add material-ui package:
+2. Add navigation bar
+3. Add menu
+4. Add native like features
+
 ## Step 2 : Serve it over HTTPs
+
+1. yarn build
+2. Serve it: `serve build 8080`
+3. `ngrok http 8080`
+4. Browse it on `https://a900701f.ngrok.io`
 
 ## Step 3 : Make the app installable
 

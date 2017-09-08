@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import FloatingActionButton from 'material-ui/FloatingActionButton';
-import { Link } from 'react-router';
 import ContentAdd from 'material-ui/svg-icons/content/add';
 import Page from '../components/Page';
 
