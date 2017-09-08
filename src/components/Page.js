@@ -16,7 +16,9 @@ class Page extends Component {
                     <img src={logo} className="App-logo" alt="logo" />
                     <h2>{this.props.title}</h2>
                 </div>
-                {this.props.children}
+                <div style={{}}>
+                    {this.props.children}
+                </div>
             </div>
         );
     }
