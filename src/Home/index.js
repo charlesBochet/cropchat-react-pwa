@@ -17,9 +17,11 @@ class Home extends Component {
 
     const catsList =
       cat !== undefined ? (
-        Object.keys(cat).map((key, id) => (
-          <Picture url={cat[key].url} comment={cat[key].comment} />
-        ))
+        Object.keys(cat)
+          .reverse()
+          .map((key, id) => (
+            <Picture url={cat[key].url} comment={cat[key].comment} />
+          ))
       ) : (
         <PicturesListPlacehoder />
       );
@@ -44,7 +46,7 @@ class Home extends Component {
 }
 
 export default compose(
-  firebaseConnect(['/cat#limitToFirst=10']),
+  firebaseConnect(['/cat#limitToLast=10&orderByChild=createdAt&desc']),
   connect(({ firebase: { data: { cat } } }) => ({
     cat,
   }))
