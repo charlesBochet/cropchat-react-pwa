@@ -15,13 +15,13 @@ const rootReducer = combineReducers({
   firebase: firebaseStateReducer,
 });
 
-let config = {
-  apiKey: 'AIzaSyCqM9bPtHmERf7Zcf2kL-ktaJZu8711Rng',
-  authDomain: 'cropchat-50ff7.firebaseapp.com',
-  databaseURL: 'https://cropchat-50ff7.firebaseio.com',
-  projectId: 'cropchat-50ff7',
-  storageBucket: 'cropchat-50ff7.appspot.com',
-  messagingSenderId: '187222083715',
+var config = {
+  apiKey: 'AIzaSyDOhxRITgaq2LSTtZu72BVAcd3o7XaKb3g',
+  authDomain: 'cropchat-rea.firebaseapp.com',
+  databaseURL: 'https://cropchat-rea.firebaseio.com',
+  projectId: 'cropchat-rea',
+  storageBucket: 'cropchat-rea.appspot.com',
+  messagingSenderId: '1087740784005',
 };
 const rrfConfig = { userProfile: 'users' };
 

@@ -13,14 +13,14 @@ import Picture from './components/Picture';
 
 class Home extends Component {
   render() {
-    const { cat } = this.props;
+    const { cats } = this.props;
 
     const catsList =
-      cat !== undefined ? (
-        Object.keys(cat)
+      cats !== undefined ? (
+        Object.keys(cats)
           .reverse()
           .map((key, id) => (
-            <Picture url={cat[key].url} comment={cat[key].comment} />
+            <Picture url={cats[key].url} comment={cats[key].comment} />
           ))
       ) : (
         <PicturesListPlacehoder />
@@ -46,8 +46,8 @@ class Home extends Component {
 }
 
 export default compose(
-  firebaseConnect(['/cat#limitToLast=10&orderByChild=createdAt&desc']),
-  connect(({ firebase: { data: { cat } } }) => ({
-    cat,
+  firebaseConnect(['/cats#limitToLast=10&orderByChild=createdAt&desc']),
+  connect(({ firebase: { data: { cats } } }) => ({
+    cats,
   }))
 )(Home);
