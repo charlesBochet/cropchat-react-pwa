@@ -8,7 +8,6 @@ import FloatingActionButton from 'material-ui/FloatingActionButton';
 import ContentAdd from 'material-ui/svg-icons/content/add';
 
 import Page from '../components/Page';
-import PicturesListPlacehoder from '../components/PicturesListPlaceholder';
 import Picture from './components/Picture';
 
 class Home extends Component {
@@ -23,7 +22,7 @@ class Home extends Component {
             <Picture url={cats[key].url} comment={cats[key].comment} />
           ))
       ) : (
-        <PicturesListPlacehoder />
+        "Loading..."
       );
 
     return (
