@@ -11,7 +11,7 @@ class App extends Component {
       <Router history={browserHistory}>
         <Route path="/" component={Layout}>
           <IndexRoute component={Home} />
-          <Route path="post" getComponent={Post} />
+          <Route path="post" component={Post} />
         </Route>
       </Router>
     );
